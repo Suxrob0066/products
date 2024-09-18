@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+        }
+    </style>
+</head>
+<body class="p-5 flex gap-10">
+    <div class="flex flex-col space-y-5">
+        <input required autocomplete="off" class="search w-[300px] p-2 border-slate-300  rounded-[30px] border-[2px] placeholder:p-3 outline:none  h-[60px]" type="search" name="search" placeholder="Searching...">
+        <ul class="products p-5 w-[330px] space-y-5 border-[2px] border-slate-600 rounded-md h-[90vh] overflow-y-auto">
+        </ul>
+    </div>
+    <ul class="list p-5 w-[330px] space-y-5 border-[2px] border-slate-600 rounded-md h-[90vh] overflow-y-auto"></ul>
+    <ul class="posts p-5 w-[330px] space-y-5 border-[2px] border-slate-600 rounded-md h-[90vh] overflow-y-auto"></ul>
+    <ul class="comments p-5 w-[330px] space-y-5 border-[2px] border-slate-600 rounded-md h-[90vh] overflow-y-auto"></ul>
+   
+    
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="./js/main.js"></script>
+    <script src="./js/dom.js"></script>
+</body>
+</html>
